@@ -46,13 +46,13 @@ def GenerateQuestion(Conditions): # This function generates a question within gi
         RemainderNecessary = True
 
     if Operator <= 2: 
-        Operand1 = random.randint(0, 10^Conditions[4])
-        Operand2 = random.randint(0, 10^Conditions[4])
+        Operand1 = random.randint(0, 10**Conditions[4])
+        Operand2 = random.randint(0, 10**Conditions[4])
         while Operand2 > Operand1:
-            Operand2 = random.randint(0, 10^Conditions[4]) # No negative numbers allowed
+            Operand2 = random.randint(0, 10**Conditions[4]) # No negative numbers allowed
     else:
-        Operand1 = random.randint(0, 10^Conditions[5])
-        Operand2 = random.randint(1, 10^Conditions[5]) # No division by 0 allowed
+        Operand1 = random.randint(0, 10**Conditions[5])
+        Operand2 = random.randint(1, 10**Conditions[5]) # No division by 0 allowed
         
         # Getting the answers here
     if Operator == 1: # 1 = Addition
